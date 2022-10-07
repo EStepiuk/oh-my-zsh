@@ -66,8 +66,9 @@ To learn more, visit [ohmyz.sh](https://ohmyz.sh), follow [@ohmyzsh](https://twi
 
 Oh My Zsh is installed by running one of the following commands in your terminal. You can install this via the command-line with either `curl`, `wget` or another similar tool.
 
+
 | Method    | Command                                                                                           |
-| :-------- | :------------------------------------------------------------------------------------------------ |
+| :---------- | :-------------------------------------------------------------------------------------------------- |
 | **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
 | **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
 | **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
@@ -210,13 +211,11 @@ The install script also accepts these variables to allow installation of a diffe
 
 - `REPO` (default: `ohmyzsh/ohmyzsh`): this takes the form of `owner/repository`. If you set
   this variable, the installer will look for a repository at `https://github.com/{owner}/{repository}`.
-
 - `REMOTE` (default: `https://github.com/${REPO}.git`): this is the full URL of the git repository
   clone. You can use this setting if you want to install from a fork that is not on GitHub (GitLab,
   Bitbucket...) or if you want to clone with SSH instead of HTTPS (`git@github.com:user/project.git`).
 
   _NOTE: it's incompatible with setting the `REPO` variable. This setting will take precedence._
-
 - `BRANCH` (default: `master`): you can use this setting if you want to change the default branch to be
   checked out when cloning the repository. This might be useful for testing a Pull Request, or if you
   want to use a branch other than `master`.
@@ -285,13 +284,11 @@ By default, you will be prompted to check for updates every 2 weeks. You can cho
    ```sh
    zstyle ':omz:update' mode auto
    ```
-
 2. Just offer a reminder every few days, if there are updates available:
 
    ```sh
    zstyle ':omz:update' mode reminder
    ```
-
 3. To disable automatic updates entirely:
 
    ```sh
